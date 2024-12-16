@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vloeren BS - Onze Projecten</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="{{ url_for('index') }}">
+          <h1 class="Naam">Vloeren BS</h1>
+        </a>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('projecten') }}">Onze Projecten</a></li>
+        <li><a href="{{ url_for('beoordelingen') }}">Klantenbeoordelingen</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="onze-projecten">
+  <h2>Onze Projecten</h2>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="{{ url_for('static', filename='images/Vloer.png') }}" alt="Project 1">
+    </div>
+    <div class="slide fade">
+      <img src="{{ url_for('static', filename='images/Badkamers.jpg') }}" alt="Project 2">
+    </div>
+    <div class="slide fade">
+      <img src="{{ url_for('static', filename='images/Binnenvloeren.jpg') }}" alt="Project 3">
+    </div>
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 2024 Vloeren BS. Alle rechten voorbehouden.</p>
+</footer>
+</body>
+</html>

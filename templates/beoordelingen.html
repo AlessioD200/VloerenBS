@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vloeren BS - Klantenbeoordelingen</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="{{ url_for('index') }}">
+          <h1 class="Naam">Vloeren BS</h1>
+        </a>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('projecten') }}">Onze Projecten</a></li>
+        <li><a href="{{ url_for('beoordelingen') }}">Klantenbeoordelingen</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section class="reviews">
+    <h2>Klantenbeoordelingen</h2>
+    <p>HEEFT U ERVARING MET VLOEREN BS? Laat uw beoordeling achter en deel uw project met ons!</p>
+    <p>Bij Vloeren BS streven we ernaar om perfecte vloeroplossingen te bieden, ongeacht de omvang of complexiteit van het project.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Vloeren BS. Alle rechten voorbehouden.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vloeren BS - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+      <a href="{{ url_for('index') }}">
+        <h1 class="Naam">Vloeren BS</h1>
+      </a>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('projecten') }}">Onze Projecten</a></li>
+      <li><a href="{{ url_for('beoordelingen') }}">Klantenbeoordelingen</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="banner">
+    <h1>Welkom Bij Vloeren BS</h1>
+    <p>Vloeren BS in Zwevegem is gespecialiseerd in hoogwaardige vloeren voor zowel residentiële als commerciële projecten. De jarenlange ervaring en vakmanschap garandeert een perfect resultaat voor elke aanvraag.</p>
+  </section>
+
+  <section class="services">
+    <h2>Onze Diensten</h2>
+    <div class="service-items">
+      <div class="service">
+        <img src="{{ url_for('static', filename='images/Binnenvloeren.jpg') }}" alt="Binnenvloeren">
+        <p>Binnenvloeren</p>
+      </div>
+      <div class="service">
+        <img src="{{ url_for('static', filename='images/Opritten.jpg') }}" alt="Opritten en Terrassen">
+        <p>Opritten en Terrassen</p>
+      </div>
+      <div class="service">
+        <img src="{{ url_for('static', filename='images/Badkamers.jpg') }}" alt="Badkamers">
+        <p>Badkamers</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="review">
+    <blockquote>
+      "Heel tevreden over de plaatsing van mijn vloer. Afspraken werden correct nageleefd en steeds een goede communicatie. Topkwaliteit voor de juiste prijs. Een aanrader!"<br>
+      - F. Vanderbeken
+    </blockquote>
+    <a href="https://www.google.com/search?q=reviews+voor+vloeren+bs" target="_blank">Lees meer reviews op Google</a>
+  </section>
+
+  <section class="about">
+    <h2>Over Vloeren BS</h2>
+    <p>Met jarenlange ervaring in de bouwsector is zaakvoeder B. Sandra gespecialiseerd in het leggen, renoveren en onderhouden van vloeren.</p>
+  </section>
+</main>
+
+<section id="offerte">
+  <h2>Vraag een Offerte Aan</h2>
+  <form action="{{ url_for('index') }}" method="post" class="offerte-form">
+    <label for="name">Naam:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mailadres:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Telefoonnummer:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="message">Bericht:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Verstuur</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2024 Vloeren BS. Alle rechten voorbehouden.</p>
+</footer>
+</body>
+</html>

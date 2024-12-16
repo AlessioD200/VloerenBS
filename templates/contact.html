@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vloeren BS - Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}">
+              <h1 class="Naam">Vloeren BS</h1>
+            </a>
+          <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projecten') }}">Onze Projecten</a></li>
+            <li><a href="{{ url_for('beoordelingen') }}">Klantenbeoordelingen</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<main>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Vloeren BS BV<br>
+            Ellestraat 175, 8550 Zwevegem<br>
+            M: vloerenbs@outlook.com<br>
+            T: +32(0)472/64.81.02</p>
+        <iframe src="https://www.google.com/maps/embed?..."></iframe>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Vloeren BS. Alle rechten voorbehouden.</p>
+</footer>
+</body>
+</html>
